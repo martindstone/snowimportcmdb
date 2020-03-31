@@ -36,7 +36,7 @@ This script tries to show dependencies stored in PD, starting from the SNOW cmdb
 
 ### destroy.py
 
-This script just deletes services, business services whose names begin with the specified prefix, along with any associated escalation  policies. Be careful with it!
+This script just deletes services and business services whose names begin with the specified prefix, along with any associated escalation  policies. Be careful with it!
 
     python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt
-    python show.py <YOUR_PD_API_KEY>
+    python destroy.py <YOUR_PD_API_KEY>
