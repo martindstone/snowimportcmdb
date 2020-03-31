@@ -31,12 +31,12 @@ It's meant to be run as a "fix script" in ServiceNow - go to System Definition >
 
 This script tries to show dependencies stored in PD, starting from the SNOW cmdb_ci_service table. To use:
 
-`python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt`
-`python show.py <YOUR_PD_API_KEY> <YOUR_SNOW_USER> <YOUR_SNOW_PASS> <YOUR_SNOW_HOSTNAME>`
+    python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt
+    python show.py <YOUR_PD_API_KEY> <YOUR_SNOW_USER> <YOUR_SNOW_PASS> <YOUR_SNOW_HOSTNAME>
 
 ### destroy.py
 
 This script just deletes services, business services whose names begin with the specified prefix, along with any associated escalation  policies. Be careful with it!
 
-`python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt`
-`python show.py <YOUR_PD_API_KEY>`
+    python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt
+    python show.py <YOUR_PD_API_KEY>
